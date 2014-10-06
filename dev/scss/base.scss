@@ -1,0 +1,67 @@
+//@import "variables";
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+ul, li, p, div {
+	margin: 0;
+	padding: 0;
+	// list-style: none;
+	// vertical-align: top;
+}
+
+// div {
+// 	height: 1em;
+// 	background-color: #333;
+// 	display: inline-block;
+// 	position: relative;
+// }
+
+#main {
+	width: 100%;
+	background: #eee;
+	min-height: 150px;
+	margin: 0 auto;
+}
+
+// div {
+// 	background: #ccc;
+// 	height: 50px;
+// 	display: inline-block;
+// 	position: relative;
+// }
+
+#main > div {
+	background: #ccc;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+}
+
+ul, li {
+
+}
+
+li {
+
+}
+
+p {
+
+}
+
+a {
+
+}

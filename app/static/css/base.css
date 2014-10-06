@@ -1,0 +1,29 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+ul, li, p, div {
+  margin: 0;
+  padding: 0; }
+
+#main {
+  width: 100%;
+  background: #eee;
+  min-height: 150px;
+  margin: 0 auto; }
+
+#main > div {
+  background: #ccc;
+  height: 50px;
+  display: inline-block;
+  position: relative; }
+
+/*# sourceMappingURL=base.css.map */

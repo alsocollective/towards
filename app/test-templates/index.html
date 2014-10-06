@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<!-- Don't Forget Viewport! -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TOWARDS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="../static/css/base.css">
+
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+
+        <script src="../static/js/modernizr.custom.09628.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <h1>8 Columns</h1>
+        <ul>
+            <li>Column Number</li>
+            <li>Gutter Width</li>
+            <li>Column Span</li>
+            <li>Column Start *This one might be confusing</li>
+        <ul>
+
+        <div id="main" style="max-width: 100%"></div>
+
+        <!-- <div id="main" style="max-width: 100%"><div style="width: 12%; margin-right: 0.5%; margin-left: 0%;"></div><div style="width: 12%; margin-right: 0.5%;"></div><div style="width: 12%; margin-right: 0.5%;"></div><div style="width: 12%; margin-right: 0.5%;"></div><div style="width: 12%; margin-right: 0.5%;"></div><div style="width: 12%; margin-right: 0.5%;"></div><div style="width: 12%; margin-right: 0.5%;"></div><div style="width: 12%; margin-right: 0.5%;"></div><div style="width: 24.5%; left: 12.5%;"><div style="width: 100%;"><div style="width: 12%; margin-right: 0.5%; height: 50px; background: #f00;"></div><div style="width: 12%; margin-right: 0.5%; height: 50px; background: #f00;"></div></div></div></div> -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <!-- <script src="js/plugins.js"></script> -->
+        <!-- <script src="js/main.js"></script> -->
+
+        <script type="text/javascript">
+
+            console.log("Fun");
+
+            var element = document.getElementById("main");
+            var colNum = 5;
+            var gutter = 1;
+            var leftOffset = 0;
+            var colWidth = parseFloat((100/colNum)-gutter);
+
+            console.log(colWidth);
+            console.log((gutter*colNum)/100);
+
+            for (i=0; i<colNum; i++) {
+                var d = document.createElement("div");
+                element.appendChild(d);
+                d.style.width = colWidth+"%";
+                d.style.marginRight = gutter+"%"
+                d.style.marginLeft = "0%"
+                d.style.left = leftOffset+"%"
+            }
+
+
+
+            
+
+        </script>
+
+        <script>
+        // Google Analytics
+        </script>
+    </body>
+</html>

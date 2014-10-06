@@ -4,16 +4,16 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         files: {
-          'app/static/css/base.css': 'app/static/css/base.scss',
-          'app/static/css/tablet.css': 'app/static/css/tablet.scss',
-          'app/static/css/mobile.css': 'app/static/css/mobile.scss',
+          'app/static/css/base.css': 'dev/scss/base.scss',
+          'app/static/css/tablet.css': 'dev/scss/tablet.scss',
+          'app/static/css/mobile.css': 'dev/scss/mobile.scss',
         }
       }
     },
     cssmin: {
       combine: {
         files: {
-          'app/static/css/style.css': ['node_modules/normalize.css'],
+          'app/static/css/style.css': ['/node_modules/normalize.css/normalize.css'],
           'app/static/css/tablet.min.css': 'app/static/css/tablet.css',
           'app/static/css/mobile.min.css': 'app/static/css/mobile.css'
         }
